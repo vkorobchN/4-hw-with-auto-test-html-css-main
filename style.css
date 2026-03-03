@@ -234,13 +234,13 @@ footer {
 
     .text-wrapper {
         /* 📍 Максимальная ширина для блока с текстом */
-        max-width: 100%;
-        gap: 20px;
+        max-width: 80%;
     }
 
     .about-section {
     /* 📍 Внутренний отступ сверху и снизу */
-    }
+    padding: 60px 20px;
+}
 }
 
 @media screen and (max-width: 768px) {
