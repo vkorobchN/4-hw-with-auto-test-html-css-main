@@ -222,23 +222,23 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-start;
-        gap: 30px;
+        gap: 60px;
     }
 
     .main-image {
-        width: 100%;/* 📍 Максимальная ширина для главного изображения в % */
+        max-width: 100%;/* 📍 Максимальная ширина для главного изображения в % */
         height: auto;
         display: block;
     }
 
     .text-wrapper {
         /* 📍 Максимальная ширина для блока с текстом */
-        max-width: 80%;
+        max-width: 560px;
     }
 
     .about-section {
     /* 📍 Внутренний отступ сверху и снизу */
-    padding: 60px 20px;
+    padding: 60px 0px;
 }
 }
 
