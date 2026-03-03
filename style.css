@@ -8,13 +8,13 @@
     width: 100%;
     margin: 0px auto;
     max-width: 1180px; /* ⚠️ ОБРАТИ ВНИМАНИЕ - максимальная ширина увеличилась на размер отступов, чтобы ширина контента оставалась корректной */
-    /* 📍 Свойство для внутрених отступов */
+    padding: 0 20px;/* 📍 Свойство для внутрених отступов */
 }
 
 body {
     font-family: "Inter", sans-serif; 
     color: #303030;
-    /* 📍 Минимальная ширина */ 
+    min-width: 375px;/* 📍 Минимальная ширина */ 
 }
 
 header {
@@ -143,6 +143,8 @@ select:hover,
 form {
     margin-bottom: 40px;
     /* 📍 Свойства для расположения элементов (инпута и кнопки) и отступа между ними */
+    display: flex;
+    gap: 10px;
 }
 
 .text-field {
@@ -208,10 +210,6 @@ footer {
 
 /* Стили для адаптива под планшеты */
 @media screen and (max-width: 1200px) {
-    .container {
-        padding: 0px 20px;
-    }
-
     .main-section {
         /* 📍 Свойства для установки минимальной высоты секции по размеру контента и нижнего внутреннего отступа */
         min-height: auto;
@@ -228,8 +226,9 @@ footer {
     }
 
     .main-image {
-        max-width: 100%;/* 📍 Максимальная ширина для главного изображения в % */
+        width: 100%;/* 📍 Максимальная ширина для главного изображения в % */
         height: auto;
+        display: block;
     }
 
     .text-wrapper {
@@ -246,25 +245,29 @@ footer {
 @media screen and (max-width: 768px) {
     .info-wrapper {
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     }
 }
 
 /* Стили для адаптива под мобильные устройства */
 @media screen and (max-width: 576px) {
     .main-section {
-        /* 📍 Внутренние отступы сверху и снизу */
+        padding: 30px 0px 60px;/* 📍 Внутренние отступы сверху и снизу */
     }
 
     .main-section .wrapper {
-        /* 📍 Отступ между изображением и блоком с текстом */
+        gap: 40px;/* 📍 Отступ между изображением и блоком с текстом */
     }
 
     .main-title {
         /* 📍 Размер шрифта */
+        font-size: 36px;
     }
 
     .about-section .wrapper,
     .info-wrapper {
         /* 📍 Отступ между изображением и блоком с текстом */
-    }
+        gap: 50px;}
 }
